@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pytoolkit"]
+# exclude = ["examples"]
+
+[project]
+name = "pytoolkit"
+authors = [
+    {name = "tongxiao2002", email = "tongxiao2002@mail.ustc.edu.cn"}
+]
+description = "A versatile Python package designed to simplify everyday coding tasks."
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "rich",
+    "requests",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+[project.urls]
+Repository = "https://github.com/tongxiao2002/pytoolkit"
